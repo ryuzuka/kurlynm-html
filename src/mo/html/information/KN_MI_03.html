@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "송장조회"
+  })
+</head>
+
+<body>
+  <div class="wrap">
+    @@include('../inc/header.html')
+
+    <div class="visual information">
+        <div class="text">
+            <h2>송장조회</h2>
+            <p>고객님이 신청하신 물류의 배송현황을 직접 확인해보세요.</p>
+        </div>
+    </div>
+
+    <!--: Start #contents -->
+    <div class="inner-section if-transport">
+      <h3>운송장번호</h3>
+      <div class="field-box transport-list">
+        <div class="area">
+          <div class="input-area js-input">
+            <div class="input">
+              <input type="number" title="운송장 번호 입력" name="" placeholder="‘-’를 제외한 운송장번호를 입력해주세요.">
+              <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+            </div>
+          </div>
+          <div class="info-box">
+            <button type="button" class="btn-add">
+              <span class="blind">입력 필드 추가</span>
+            </button>
+            <div class="inner-layer">
+              <span>여러개의 운송장번호를 한번에!</span>
+            </div>
+          </div>
+        </div>
+        <div class="area" style="display: none">
+          <div class="input-area js-input">
+            <div class="input">
+              <input type="number" title="운송장 번호 입력" name="" placeholder="‘-’를 제외한 운송장번호를 입력해주세요.">
+              <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+            </div>
+          </div>
+          <button type="button" class="btn-add delete">
+            <span class="blind">입력 필드 삭제</span>
+          </button>
+        </div>
+      </div>
+      <ul class="list-info">
+        <li>3개월 이내의 정보만 조회 가능합니다.</li>
+        <li>배송중일경우 실시간 현황이 반영되지 않을 수 있습니다.</li>
+        <li>최대 2개의 운송장번호로 동시 조회가 가능합니다.</li>
+      </ul>
+	    <div class="btn-wrap">
+	      <a href="#" class="btn btn-primary">조회하기</a>
+	    </div>
+    </div>
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 2
+		
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

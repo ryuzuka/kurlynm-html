@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "견적문의내역"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header.html')
+    <!-- e : header -->
+
+    <!-- s : contents -->
+    <div class="contents estimate">
+      <div class="visual ect">
+        <h2>견적문의내역</h2>
+        <p class="text">문의하신 내역을 확인해보세요.</p>
+      </div>
+    <div class="estimate-section">
+
+        <div class="estimate-form">
+            <p>기간</p>
+            <div class="estimate-choice">
+                <div class="input-group">
+                  <div class="rdo-box">
+                    <input type="radio" id="rdo1-1" name="rdo" value="all"><label for="rdo1-1">전체</label>
+                  </div>
+                  <div class="rdo-box">
+                    <input type="radio" id="rdo1-2" name="rdo" value="1"><label for="rdo1-2">1개월</label>
+                  </div>
+                  <div class="rdo-box">
+                    <input type="radio" id="rdo1-3" name="rdo" value="3"><label for="rdo1-3">3개월</label>
+                  </div>
+                  <div class="rdo-box">
+                      <input type="radio" id="rdo1-4" name="rdo" value="6"><label for="rdo1-4">6개월</label>
+                    </div>
+                </div>
+
+                <div class="calendar">
+                  <div class="input-title">직접입력</div>
+                  <div class="js-calendar datepicker from">
+                    <input type="text" id="from-date" name="from" readonly>
+                  </div>
+                  <span>~</span>
+                  <div class="js-calendar datepicker to">
+                    <input type="text" id="to-date" name="to" readonly>
+                  </div>
+                </div>
+
+                <div class="estimate_btn">
+                  <a href="#none" class="reply reset">
+                    <img src="/pc/image/mypage/reply.svg" class="login_logo">
+                  </a>
+                  <a href="#" class="btn_search">
+                    <span><img src="/pc/image/mypage/search.svg"></span><span>검색</span>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner-section">
+            <div class="tblnew-box">
+              <table class="tblnew-list">
+                <caption><span class="blind">공시정보</span></caption>
+                <colgroup>
+                  <col style="width:16%;">
+                  <col style="width:16%;">
+                  <col style="width:16%;">
+                  <col style="width:24%;">
+                  <col style="width:16%;">
+                  <col style="width:12%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th scope="col">문의일시</th>
+                  <th scope="col">사업체명</th>
+                  <th scope="col">담당자 연락처</th>
+                  <th scope="col">이메일</th>
+                  <th scope="col">처리상태</th>
+                  <th scope="col">상세확인</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="">2022-10-19 00:00</td>
+                  <td class="">홍길동회사</td>
+                  <td class="">010-1234-1234</td>
+                  <td class="">abcdef@text.com</td>
+                  <td>
+                    <span class="no">처리중</span>
+                  </td>
+                  <td class="">
+                    <a href="#none">보기</a>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="ok">답변완료</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">2022-10-19 00:00</td>
+                    <td class="">홍길동회사</td>
+                    <td class="">010-1234-1234</td>
+                    <td class="">abcdef@text.com</td>
+                    <td>
+                      <span class="no">처리중</span>
+                    </td>
+                    <td class="">
+                      <a href="#none">보기</a>
+                    </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="paging js-paging">
+              <button type="button" class="paging-first" disabled><span class="blind">처음</span></button>
+              <button type="button" class="paging-prev" disabled><span class="blind">이전</span></button>
+              <div class="paging-list">
+                <a href="#" aria-current="page">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+              </div>
+              <button type="button" class="paging-next"><span class="blind">다음</span></button>
+              <button type="button" class="paging-last"><span class="blind">마지막</span></button>
+            </div>
+          </div>
+      </div>
+	
+		  <div id="pop-invalid-date" class="layer" role="dialog" aria-modal="true">
+		    <div class="layer-wrap">
+			    <div class="layer-content">
+				    <p>잘못된 날짜입니다.</p>
+			    </div>
+			    <div class="button-wrap">
+				    <button class="btn">확인</button>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/pc/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = -1
+		  $.depth2Index = -1
+
+		  $(function () {
+				// 기간 설정
+			  $('.estimate-form').on('change-calendar', e => {
+					console.log(e.period, e.date)
+			  })
+		  })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <title>컬리 넥스트마일</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="description" content="">
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+<!--: Start #contents -->
+<div class="contents">
+
+  <div class="page__pagelist app__SKT">
+    <div id="wrapper">
+      <header id="header">
+        <h1 class="title">Pagelist pc</h1>
+      </header>
+      <main id="container">
+        <ul class="tab">
+          <li class="active"><button type="button" value="pc">PC LIST</button></li>
+          <li><button type="button" value="mobile">MOBILE LIST</button></li>
+          <li><button type="button" value="admin">ADMIN LIST</button></li>
+        </ul>
+        <div class="tag-list">
+          <span class="function">기능</span>
+          <span>작업 상태</span>
+          <span>완료 날짜</span>
+          <span class="note">비고</span>
+        </div>
+        <div class="box__pagelist">
+          <div class="pagelist-section">
+            <h2 class="pagelist-title">Guide</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a class="link" href='/guide.html' target="_blank">UI Elements 가이드</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">Main</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/index.html' target="_blank" class="link">main - INDEX</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">로그인 [login]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/login/KN_LO_01.html' target="_blank" class="link">로그인 - KN_LO_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/login/KN_LO_02.html' target="_blank" class="link">로그인 완료 - KN_LO_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">회사소개 [company]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/company/KN_IM_01.html' target="_blank" class="link">회사개요 - KN_IM_01</a>
+                <div class="function"></div>
+                <div class="status">진행 중</div>
+                <div class="date"></div>
+                <div class="note">이미지 변경 예정</div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/company/KN_IM_02.html' target="_blank" class="link">오시는 길 - KN_IM_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/company/KN_IM_03.html' target="_blank" class="link">공시정보 - KN_IM_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/company/KN_IM_03_02.html' target="_blank" class="link">공시정보 없음 - KN_IM_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">서비스 [service]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/service/KN_SV_01.html' target="_blank" class="link">새벽배송 - KN_SV_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/service/KN_SV_02.html' target="_blank" class="link">풀콜드체인 - KN_SV_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/service/KN_SV_03.html' target="_blank" class="link">시스템 - KN_SV_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">요금안내 [information]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/information/KN_MI_01.html' target="_blank" class="link">요금안내 - KN_MI_01</a>
+                <div class="function">입고방법 radio 클릭시<br>
+                하단 내용 show/hide 및 우측 금액 변경</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/information/KN_MI_02.html' target="_blank" class="link">견적문의 - KN_MI_02</a>
+                <div class="function">입고 방법 radio 클릭시<br>하단 메뉴 show/hide</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/information/KN_MI_03.html' target="_blank" class="link">송장조회 - KN_MI_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/information/KN_MI_03_01.html' target="_blank" class="link">송장조회 결과(한개) - KN_MI_03_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/information/KN_MI_03_02.html' target="_blank" class="link">송장조회 결과(다수) - KN_MI_03_02</a>
+                <div class="function">화살표 클릭시<br>detail 화면 show/hide</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">채용안내 [recruit]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/recruit/KN_RC_01.html' target="_blank" class="link">채용안내 - KN_RC_01</a>
+                <div class="function">슬라이드 마우스 스크롤이벤트</div>
+                <div class="status">진행중</div>
+                <div class="date"></div>
+                <div class="note">슬라이드 이미지 변경예정</div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">고객지원 [customer]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_01.html' target="_blank" class="link">이용가이드 - KN_CM_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_02.html' target="_blank" class="link">1:1 문의 - KN_CM_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_02_list.html' target="_blank" class="link">1:1 문의 목록 - KN_CM_02_list</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_02_list_no.html' target="_blank" class="link">1:1 문의 내역없음 - KN_CM_02_list_no</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_02_detail.html' target="_blank" class="link">1:1 문의 상세 - KN_CM_02_detail</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_02_detail_ok.html' target="_blank" class="link">1:1 문의 상세 (답변완료) - KN_CM_02_detail_ok</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_03.html' target="_blank" class="link">공지사항 - KN_CM_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_03_02.html' target="_blank" class="link">공지사항 상세 - KN_CM_03_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_03_03.html' target="_blank" class="link">공지사항 내용없음 - KN_CM_03_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_04.html' target="_blank" class="link">이벤트 - KN_CM_04</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_04_02.html' target="_blank" class="link">이벤트 상세 - KN_CM_04_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/customer/KN_CM_04_03.html' target="_blank" class="link">이벤트 내용없음 - KN_CM_04_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">마이 페이지 [mypage]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/mypage/KN_MY_01.html' target="_blank" class="link">견적문의 내역 - KN_MY_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/mypage/KN_MY_01-01.html' target="_blank" class="link">견적문의 내역 상세 - KN_MY_01-01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/mypage/KN_MY_01-02.html' target="_blank" class="link">견적문의 결과 없음 - KN_MY_01-02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/mypage/KN_MY_02.html' target="_blank" class="link">회원정보 변경 - KN_MY_02</a>
+                <div class="function">레이어팝업</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">공통 [etc]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/pc/html/etc/KN_CO_02_02.html' target="_blank" class="link">개인정보처리방침 - KN_CO_02_02</a>
+                <div class="function">레이어팝업</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/etc/KN_CO_02_03.html' target="_blank" class="link">택배 표준약관 - KN_CO_02_03</a>
+                <div class="function">레이어팝업</div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/etc/KN_CO_04_01.html' target="_blank" class="link">404 에러 - KN_CO_04_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/pc/html/etc/KN_CO_04_02.html' target="_blank" class="link">점검 중 - KN_CO_04_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagelist-section" style="display:none;">
+            <h2 class="pagelist-title">Guide</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a class="link" href='/guide.html' target="_blank">UI Elements 가이드</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">Main</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/index.html' target="_blank" class="link">main - INDEX</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">로그인 [login]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/login/KN_LO_01.html' target="_blank" class="link">로그인 - KN_LO_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/login/KN_LO_02.html' target="_blank" class="link">로그인 완료 - KN_LO_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">회사소개 [company]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/company/KN_IM_01.html' target="_blank" class="link">회사개요 - KN_IM_01</a>
+                <div class="function"></div>
+                <div class="status">진행 중</div>
+                <div class="date"></div>
+                <div class="note">이미지 변경 예정</div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/company/KN_IM_02.html' target="_blank" class="link">오시는 길 - KN_IM_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/company/KN_IM_03.html' target="_blank" class="link">공시정보 - KN_IM_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">서비스 [service]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/service/KN_SV_01.html' target="_blank" class="link">새벽배송 - KN_SV_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/service/KN_SV_02.html' target="_blank" class="link">풀콜드체인 - KN_SV_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/service/KN_SV_03.html' target="_blank" class="link">시스템 - KN_SV_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">요금안내 [information]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_01.html' target="_blank" class="link">요금안내 - KN_MI_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02.html' target="_blank" class="link">견적문의 - KN_MI_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_1.html' target="_blank" class="link">견적문의01 - KN_MI_02_1</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_2.html' target="_blank" class="link">견적문의02 - KN_MI_02_2</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_3.html' target="_blank" class="link">견적문의03 - KN_MI_02_3</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_4.html' target="_blank" class="link">견적문의04 - KN_MI_02_4</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_5.html' target="_blank" class="link">견적문의05 - KN_MI_02_5</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_6.html' target="_blank" class="link">견적문의06 - KN_MI_02_6</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_02_7.html' target="_blank" class="link">견적문의07 - KN_MI_02_7</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_03.html' target="_blank" class="link">송장조회 - KN_MI_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_03_01.html' target="_blank" class="link">송장조회 결과(한개) - KN_MI_03_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/information/KN_MI_03_02.html' target="_blank" class="link">송장조회 결과(다수) - KN_MI_03_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">채용안내 [recruit]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/recruit/KN_RC_01.html' target="_blank" class="link">채용안내 - KN_RC_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">고객지원 [customer]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_01.html' target="_blank" class="link">이용가이드 - KN_CM_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_02.html' target="_blank" class="link">1:1 문의 - KN_CM_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_02_list.html' target="_blank" class="link">1:1 문의 문의내역 - KN_CM_02_list</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_02_list_no.html' target="_blank" class="link">1:1 문의 문의내역없음 - KN_CM_02_list_no</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_02_detail.html' target="_blank" class="link">1:1 문의 문의내역_상세(처리중) - KN_CM_02_detail</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_02_detail_ok.html' target="_blank" class="link">1:1 문의 문의내역_상세(처리완료) - KN_CM_02_detail_ok</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_03.html' target="_blank" class="link">공지사항 - KN_CM_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_03_02.html' target="_blank" class="link">공지사항 상세 - KN_CM_03_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_03_03.html' target="_blank" class="link">공지사항 내역없음 - KN_CM_03_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_04.html' target="_blank" class="link">이벤트 - KN_CM_04</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_04_02.html' target="_blank" class="link">이벤트 상세 - KN_CM_04_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/customer/KN_CM_04_03.html' target="_blank" class="link">이벤트 내역없음 - KN_CM_04_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">마이 페이지 [mypage]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/mypage/KN_MY_01.html' target="_blank" class="link">견적문의 내역 - KN_MY_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/mypage/KN_MY_01_01.html' target="_blank" class="link">견적문의 내역 상세 - KN_MY_01_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/mypage/KN_MY_01_02.html' target="_blank" class="link">견적문의 결과없음 - KN_MY_01_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/mypage/KN_MY_02.html' target="_blank" class="link">회원정보 변경 - KN_MY_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">공통 [etc]</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_02_02.html' target="_blank" class="link">개인정보처리방침 - KN_CO_02_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_02_02_02.html' target="_blank" class="link">개인정보처리방침(이전) - KN_CO_02_02_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_02_03.html' target="_blank" class="link">택배 표준약관 - KN_CO_02_03</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_02_03_02.html' target="_blank" class="link">택배 표준약관(이전) - KN_CO_02_03_02</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_04_01.html' target="_blank" class="link">404 에러 - KN_CO_04_01</a>
+                <div class="function"></div>
+                <div class="status">완료</div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/mo/html/etc/KN_CO_04_02.html' target="_blank" class="link">점검 중 - KN_CO_04_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagelist-section" style="display:none;">
+            <h2 class="pagelist-title">견적문의 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_QT_01.html' target="_blank" class="link">게시글 목록 - AD_QT_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_QT_02.html' target="_blank" class="link">게시글 상세 - AD_QT_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_QT_03.html' target="_blank" class="link">답변 작성/수정/삭제 - AD_QT_03</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">공지사항 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_QT_01.html' target="_blank" class="link">게시글 목록 - AD_CM_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_CM_02.html' target="_blank" class="link">게시글 상세 - AD_CM_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_CM_03.html' target="_blank" class="link">게시글 작성/수정/삭제 - AD_CM_03</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">1:1 문의 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_IQ_01.html' target="_blank" class="link">게시글 목록 - AD_IQ_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_IQ_02.html' target="_blank" class="link">게시글 상세 - AD_IQ_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_IQ_03.html' target="_blank" class="link">답변 작성/수정/삭제 - AD_IQ_03</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">대시보드 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_DB_01.html' target="_blank" class="link">대시보드 현황 - AD_DB_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_DB_02.html' target="_blank" class="link">대시보드 수정 - AD_DB_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">요금안내 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_CI_01.html' target="_blank" class="link">요금안내 현황 - AD_CI_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_CI_02.html' target="_blank" class="link">요금안내 수정 - AD_CI_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+
+            <h2 class="pagelist-title">회원 관리</h2>
+            <ul>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_US_01.html' target="_blank" class="link">회원 목록 - AD_US_01</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+              <li class="pagelist-item">
+                <a href='/admin/html/AD_US_02.html' target="_blank" class="link">회원 탈퇴 - AD_US_02</a>
+                <div class="function"></div>
+                <div class="status"></div>
+                <div class="date"></div>
+                <div class="note"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+<!--: End #contents -->
+
+<style>
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 100;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format("opentype")
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 300;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype")
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype")
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format("opentype")
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype")
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format("opentype")
+	}
+	/* nomalrize */
+	body {
+		overflow-y: scroll;
+		overflow-x: auto;
+		min-width: 320px;
+		font-size: 12px;
+		color: #000;
+		background: transparent
+	}
+	html, body {
+		position: relative;
+		height: 100%
+	}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block
+	}
+	body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, th, td, form, fieldset, legend, input, textarea, button, select, option {
+		margin: 0;
+		padding: 0;
+		font-family: 'Noto Sans KR', sans-serif, Arial, Verdana;
+		font-weight: 400;
+		word-break: keep-all;
+		-webkit-text-size-adjust: none;
+		box-sizing: border-box
+	}
+	img, fieldset, button, frame {
+		vertical-align: middle;
+		border: 0
+	}
+	ul, ol {
+		list-style: none
+	}
+	em, address {
+		font-style: normal
+	}
+	hr {
+		display: none;
+		visibility: hidden
+	}
+	caption {
+		visibility: hidden;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		font-size: 0;
+		line-height: 0
+	}
+	input, textarea, button, select {
+		vertical-align: middle;
+		-webkit-tap-highlight-color: transparent;
+		outline: 0
+	}
+	input[type=text],
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none
+	}
+	input[type=submit] {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		cursor: pointer
+	}
+	label {
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent
+	}
+	button {
+		border: 0;
+		outline: 0;
+		vertical-align: middle;
+		cursor: pointer;
+		overflow: visible;
+		background: transparent
+	}
+	button::-moz-focus-inner {
+		border: 0;
+		padding: 0
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		-webkit-tap-highlight-color: transparent
+	}
+	a:hover, a:active, a:focus {
+		text-decoration: none
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		select, textarea, input {
+			font-size: 16px
+		}
+	}
+	#header {
+		position: relative;
+		padding: 20px 20px 0
+	}
+	#header:after {
+		content: '';
+		display: block;
+		clear: both
+	}
+	#header .title {
+		display: block;
+		font-size: 20px;
+    font-weight:700;
+		text-transform: capitalize;
+	}
+	#header .status {
+		text-align: right;
+		font-size: 12px;
+	}
+	.page__main #header .title {
+		font-size: 36px;
+		line-height: 54px;
+		font-weight: 800
+	}
+	#container {
+		position: relative;
+		margin: 0 20px;
+    padding-top:20px;
+	}
+	.pagelist-title:first-of-type {
+		margin-top: 10px;
+	}
+	#container {
+		margin-bottom: 20px
+	}
+	#header {
+		position: relative;
+		padding: 20px 20px 0
+	}
+	#header:after {
+		content: '';
+		display: block;
+		clear: both
+	}
+	#header .status {
+		text-align: right;
+		font-size: 12px;
+	}
+	.page__main #header .title {
+		font-size: 36px;
+		line-height: 54px;
+		font-weight: 800
+	}
+	#container {
+		position: relative;
+		margin: 0 20px
+	}
+	.pagelist-title {
+		margin: 20px 0 0;
+		padding: 5px;
+    background-color: #5f0080;
+    /*background-color: #e98e42;*/
+		color: #fff;
+		font-size: 14px;
+    font-weight:700;
+	}
+	#container {
+		margin-bottom: 20px
+	}
+	.pagelist-item {
+		display: flex;
+		border-bottom: 1px solid #eee;
+    align-items:center;
+	}
+	.pagelist-item .link {
+		display:block;
+    width:100%;
+		padding: 10px;
+		color: #000;
+		font-size: 13px;
+		font-weight: 500
+	}
+	.pagelist-item .link[href^="#"] {
+		color: #eee
+	}
+	.pagelist-item .date {
+		/*display: block;*/
+		margin-left: auto;
+	}
+	.pagelist-item .date span {
+		display: inline-block;
+		position: relative;
+		width: 50%;
+		font-size: 12px;
+		text-align: center;
+	}
+	.pagelist-item .date span:nth-of-type(2):after {
+		content: '/';
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 12px;
+	}
+	.pagelist-item > div {
+    width:100px;
+    padding:12px 10px;
+    font-size:12px;
+    color:#666;
+    text-align:center;
+		flex-shrink:0;
+    box-sizing:border-box;
+  }
+	.pagelist-item > .function,
+	.pagelist-item > .note {
+    width:150px;
+  }
+  .tab {
+    display: flex;
+  }
+  .tab li {
+    min-width: 100px;
+  }
+	.tab li + li {
+    margin-left: 10px;
+	}
+	.tab li button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    font-weight:700;
+	}
+	.tab li.active button {
+    background: rgba(95,0,182,.7);
+    color: #fff;
+	}
+  .tag-list {
+    display:flex;
+    margin-top:10px;
+    justify-content:flex-end;
+  }
+	.tag-list span {
+    width:100px;
+    font-weight:500;
+    text-align:center;
+  }
+	.tag-list .function,
+	.tag-list .note {
+    width:150px;
+  }
+</style>
+<script type="text/javascript">
+  $(function(){
+    $('.tab li button').on('click', function(){
+      $('.pagelist-section').eq($(this).closest('li').index()).show().siblings().hide()
+      $(this).closest('li').addClass('active').siblings().removeClass('active')
+
+      if($(this).val() === 'pc') {
+        $('h1').text('pagelist pc')
+      } else if ($(this).val() === 'mobile') {
+        $('h1').text('pagelist mobile')
+      } else {
+        $('h1').text('pagelist admin')
+      }
+    })
+  });
+</script>
+</body>
+</html>

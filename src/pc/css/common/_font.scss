@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  src:local('Pretendard Thin'),
+  url('/pc/font/Pretendard-Thin.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Thin.woff') format('woff'),
+  url('/pc/font/Pretendard-Thin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  src:local('Pretendard ExtraLight'),
+  url('/pc/font/Pretendard-ExtraLight.ttf') format('truetype'),
+  url('/pc/font/Pretendard-ExtraLight.woff') format('woff'),
+  url('/pc/font/Pretendard-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  src:local('Pretendard Light'),
+  url('/pc/font/Pretendard-Light.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Light.woff') format('woff'),
+  url('/pc/font/Pretendard-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  src:local('Pretendard Regular'),
+  url('/pc/font/Pretendard-Regular.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Regular.woff') format('woff'),
+  url('/pc/font/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  src:local('Pretendard Medium'),
+  url('/pc/font/Pretendard-Medium.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Medium.woff') format('woff'),
+  url('/pc/font/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  src:local('Pretendard SemiBold'),
+  url('/pc/font/Pretendard-SemiBold.ttf') format('truetype'),
+  url('/pc/font/Pretendard-SemiBold.woff') format('woff'),
+  url('/pc/font/Pretendard-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  src:local('Pretendard Bold'),
+  url('/pc/font/Pretendard-Bold.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Bold.woff') format('woff'),
+  url('/pc/font/Pretendard-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  src:local('Pretendard ExtraBold'),
+  url('/pc/font/Pretendard-ExtraBold.ttf') format('truetype'),
+  url('/pc/font/Pretendard-ExtraBold.woff') format('woff'),
+  url('/pc/font/Pretendard-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 900;
+  src:local('Pretendard Black'),
+  url('/pc/font/Pretendard-Black.ttf') format('truetype'),
+  url('/pc/font/Pretendard-Black.woff') format('woff'),
+  url('/pc/font/Pretendard-Black.woff2') format('woff2');
+}

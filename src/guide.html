@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('./pc/html/inc/meta.html',{
+  "pagetitle": "PC Guide"
+  })
+</head>
+  <body>
+    <style>
+      .contents section + section {
+        margin-top:40px;
+      }
+      .contents h2 {
+        margin-bottom:20px;
+        padding:20px 0;
+        border-bottom:1px solid #e8e8e8;
+        font-size:20px;
+        font-weight:bold;
+        text-transform:capitalize;
+      }
+      .contents h3 {
+        padding:20px 0;
+        text-transform:capitalize;
+      }
+      .contents h3:before {
+        content:'* ';
+      }
+      .color-guide {
+        display:flex;
+      }
+      .color-guide .box {
+	      width:80px;
+        text-align:center;
+      }
+      .color-guide .box + .box {
+        margin-left:10px;
+      }
+      .color-guide .box > div {
+        height:80px;
+      }
+      .color-guide .box .name {
+        display:block;
+        margin-top:18px;
+        font-size:14px;
+        color:#000;
+      }
+      .color-guide .box .code {
+	      display:block;
+        margin-top:6px;
+        font-size:12px;
+        color:rgba(0,0,0,.5);
+        text-transform:uppercase;
+      }
+    </style>
+
+    <div class="wrap">
+      <!--: Start #contents -->
+      <div id="contents" class="contents">
+        <div class="inner-section">
+          <section>
+            <h2>text</h2>
+            <p class="kurly-text-01">kurly-text-01 [50px/140%]</p>
+            <p class="kurly-text-02">kurly-text-02 [48px/140%]</p>
+            <p class="kurly-text-03">kurly-text-03 [40px/140%]</p>
+            <p class="kurly-text-04">kurly-text-04 [32px/150%]</p>
+            <p class="kurly-text-05">kurly-text-05 [28px/150%]</p>
+            <p class="kurly-text-06">kurly-text-06 [24px/150%]</p>
+            <p class="kurly-text-07">kurly-text-07 [18px/150%]</p>
+            <p class="kurly-text-08">kurly-text-08 [16px/150%]</p>
+            <p class="kurly-text-09">kurly-text-09 [14px/150%]</p>
+            <p class="kurly-text-10">kurly-text-10 [12px/120%]</p>
+          </section>
+
+          <section>
+            <h2>color</h2>
+            <h3>Kurly Point Color</h3>
+            <div class="color-guide">
+              <div class="box">
+                <div style="background:#5f0080;"></div>
+                <span class="name">Kurly purple1</span>
+                <span class="code">#5f0080</span>
+              </div>
+              <div class="box">
+                <div style="background:#4f177a;"></div>
+                <span class="name">Kurly purple2</span>
+                <span class="code">#4f177a</span>
+              </div>
+              <div class="box">
+                <div style="background:#8d4cc4;"></div>
+                <span class="name">Kurly purple3</span>
+                <span class="code">#8d4cc4</span>
+              </div>
+              <div class="box">
+                <div style="background:#cba3e9;"></div>
+                <span class="name">Kurly purple4</span>
+                <span class="code">#cba3e9</span>
+              </div>
+            </div>
+            <h3>Basic Color</h3>
+            <div class="color-guide">
+              <div class="box">
+                <div style="background:#000;"></div>
+                <span class="name">Black</span>
+                <span class="code">#000000</span>
+              </div>
+              <div class="box">
+                <div style="background:#fff;"></div>
+                <span class="name">White</span>
+                <span class="code">#ffffff</span>
+              </div>
+              <div class="box">
+                <div style="background:#d3d3d3;"></div>
+                <span class="name">Gray 1</span>
+                <span class="code">#d3d3d3</span>
+              </div>
+              <div class="box">
+                <div style="background:#e7e7e7;"></div>
+                <span class="name">Gray 2</span>
+                <span class="code">#e7e7e7</span>
+              </div>
+              <div class="box">
+                <div style="background:#929292;"></div>
+                <span class="name">Gray 3</span>
+                <span class="code">#929292</span>
+              </div>
+              <div class="box">
+                <div style="background:#787878;"></div>
+                <span class="name">Gray 4</span>
+                <span class="code">#787878</span>
+              </div>
+              <div class="box">
+                <div style="background:#555;"></div>
+                <span class="name">Gray 5</span>
+                <span class="code">#555</span>
+              </div>
+              <div class="box">
+                <div style="background:#565656;"></div>
+                <span class="name">Gray 6</span>
+                <span class="code">#565656</span>
+              </div>
+              <div class="box">
+                <div style="background:#1a1a1a;"></div>
+                <span class="name">Gray 7</span>
+                <span class="code">#1a1a1a</span>
+              </div>
+              <div class="box">
+                <div style="background:#f5f5f5;"></div>
+                <span class="name">Background</span>
+                <span class="code">#f5f5f5</span>
+              </div>
+              <div class="box">
+                <div style="background:#ebebeb;"></div>
+                <span class="name">Background</span>
+                <span class="code">#ebebeb</span>
+              </div>
+              <div class="box">
+                <div style="background:#db0000;"></div>
+                <span class="name">Error</span>
+                <span class="code">#db0000</span>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>form</h2>
+            <h3>input</h3>
+            <div>
+              <div class="chk-box">
+                <input type="checkbox" id="chk0-1" name="chk0" checked><label for="chk0-1">check</label>
+              </div>
+              <div class="chk-box">
+                <input type="checkbox" id="chk0-2" name="chk0"><label for="chk0-2">check</label>
+              </div>
+              <div class="rdo-box">
+                <input type="radio" id="rdo0-1" name="rdo0" checked><label for="rdo0-1">radio</label>
+              </div>
+              <div class="rdo-box">
+                <input type="radio" id="rdo0-2" name="rdo0"><label for="rdo0-2">radio</label>
+              </div>
+              <div class="input-group">
+                <div class="chk-box">
+                  <input type="checkbox" id="chk1-1" name="chk" checked><label for="chk1-1">check</label>
+                </div>
+                <div class="chk-box">
+                  <input type="checkbox" id="chk1-2" name="chk"><label for="chk1-2">check</label>
+                </div>
+                <div class="chk-box">
+                  <input type="checkbox" id="chk1-3" name="chk" disabled><label for="chk1-3">check</label>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="rdo-box">
+                  <input type="radio" id="rdo1-1" name="rdo" checked><label for="rdo1-1">radio</label>
+                </div>
+                <div class="rdo-box">
+                  <input type="radio" id="rdo1-2" name="rdo"><label for="rdo1-2">radio</label>
+                </div>
+                <div class="rdo-box">
+                  <input type="radio" id="rdo1-3" name="rdo" disabled><label for="rdo1-3">radio</label>
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div>
+              <div class="input-area js-input">
+                <label for="inp-txt0">기본 input text</label>
+                <div class="input">
+                  <input type="text" id="inp-txt0" placeholder="기본 input text">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+              </div>
+              <div class="input-area js-input">
+                <label for="inp-txt1">기본 input text</label>
+                <div class="input">
+                  <input type="text" id="inp-txt1" placeholder="기본 input text">
+                </div>
+              </div>
+              <div class="input-area error js-input">
+                <label for="inp-txt2">에러 input text</label>
+                <div class="input">
+                  <input type="text" id="inp-txt2" placeholder="에러 input text">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+              </div>
+              <div class="input-area js-input">
+                <label for="inp-txt3">disabled input text</label>
+                <div class="input">
+                  <input type="text" id="inp-txt3" placeholder="disabled input text" disabled>
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+                <label for="inp-num">input Number</label><input type="number" id="inp-num">
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>button</h2>
+            <div class="btn-wrap">
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-primary selected">Primary</button>
+              <button type="button" class="btn btn-primary" disabled>primary</button><br><br>
+              <button type="button" class="btn btn-secondary">secondary</button>
+              <button type="button" class="btn btn-secondary selected">secondary</button>
+              <button type="button" class="btn btn-secondary" disabled>secondary</button><br><br>
+              <br>
+              <br>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-primary selected">Primary</a>
+              <a href="#" class="btn btn-primary" disabled>primary</a><br><br>
+              <a href="#" class="btn btn-secondary">secondary</a>
+              <a href="#" class="btn btn-secondary selected">secondary</a>
+              <a href="#" class="btn btn-secondary" disabled>secondary</a>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="btn btn-primary-round">Primary</button>
+              <button type="button" class="btn btn-primary-round selected">Primary</button>
+              <button type="button" class="btn btn-primary-round" disabled>primary</button><br><br>
+              <button type="button" class="btn btn-secondary-round01">secondary01</button>
+              <button type="button" class="btn btn-secondary-round01 selected">secondary01</button>
+              <button type="button" class="btn btn-secondary-round01" disabled>secondary01</button><br><br>
+              <button type="button" class="btn btn-secondary-round02">secondary02</button>
+              <button type="button" class="btn btn-secondary-round02 selected">secondary02</button>
+              <button type="button" class="btn btn-secondary-round02"disabled>secondary02</button>
+              <br>
+              <br>
+              <a href="#" class="btn btn-primary-round">Primary</a>
+              <a href="#" class="btn btn-primary-round selected">Primary</a>
+              <a href="#" class="btn btn-primary-round" disabled>primary</a><br><br>
+              <a href="#" class="btn btn-secondary-round01">secondary01</a>
+              <a href="#" class="btn btn-secondary-round01 selected">secondary01</a>
+              <a href="#" class="btn btn-secondary-round01" disabled>secondary01</a><br><br>
+              <a href="#" class="btn btn-secondary-round02">secondary02</a>
+              <a href="#" class="btn btn-secondary-round02 selected">secondary02</a>
+              <a href="#" class="btn btn-secondary-round02"disabled>secondary02</a>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="btn-add"><span class="blind">추가</span></button>
+              <button type="button" class="btn-add delete"><span class="blind">삭제</span></button>
+              <br>
+              <br>
+              <a href="#" class="btn-add"><span class="blind">추가</span></a>
+              <a href="#" class="btn-add delete"><span class="blind">삭제</span></a>
+            </div>
+          </section>
+
+          <section>
+            <h2>table</h2>
+            <h3>col type</h3>
+            <div class="tbl-box">
+              <table class="tbl-list">
+                <caption class="blind">
+                  caption
+                </caption>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                <tr>
+                  <th scope="col">col1</th>
+                  <th scope="col">col2</th>
+                  <th scope="col">col2</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>내용</td>
+                  <td>내용</td>
+                  <td>내용</td>
+                </tr>
+                <tr>
+                  <td>내용</td>
+                  <td>내용</td>
+                  <td class="emp">내용</td>
+                </tr>
+                <tr class="emp">
+                  <td>내용</td>
+                  <td>내용</td>
+                  <td>내용</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>row type</h3>
+            <table class="tbl-view">
+              <caption class="blind">
+                table caption
+              </caption>
+              <colgroup>
+                <col style="width: 15%;">
+                <col>
+              </colgroup>
+              <tbody>
+              <tr>
+                <th scope="row">row1</th>
+                <td>내용</td>
+              </tr>
+              <tr>
+                <th scope="row">row2</th>
+                <td>내용</td>
+              </tr>
+              </tbody>
+            </table>
+          </section>
+	
+	        <section>
+		        <h2>icon</h2>
+		        <div>
+			        <div class="info-box">
+				        <button type="button" class="button"><span class="blind"></span></button>
+				        <div class="inner-layer">
+                  <span>
+                    센터주소 : (서울센터) 서울시 송파구 송파대로 55<br>
+                    (경기센터) 경기도 김포시 고촌읍 아라육로 57번길 15
+                    </span>
+				        </div>
+			        </div>
+			        <a href="#" class="btn-download"><span class="blind">첨부파일 다운로드</span></a>
+			        <a href="#" class="btn-search"><span class="blind">주소 검색</span></a>
+		        </div>
+	        </section>
+	
+	        <section>
+		        <h2>sns</h2>
+		        <h3>28</h3>
+		        <div>
+			        <a href="#" class="btn-sns facebook-28"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-28"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-28"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-28"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-28"><span class="blind">인스타그램</span></a>
+		        </div>
+		        <div>
+			        <a href="#" class="btn-sns facebook-28 on"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-28 on"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-28 on"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-28 on"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-28 on"><span class="blind">인스타그램</span></a>
+		        </div>
+		        <h3>32</h3>
+		        <div>
+			        <a href="#" class="btn-sns facebook-32"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-32"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-32"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-32"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-32"><span class="blind">인스타그램</span></a>
+		        </div>
+		        <div>
+			        <a href="#" class="btn-sns facebook-32 on"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-32 on"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-32 on"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-32 on"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-32 on"><span class="blind">인스타그램</span></a>
+		        </div>
+		        <h3>40</h3>
+		        <div>
+			        <a href="#" class="btn-sns facebook-40"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-40"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-40"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-40"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-40"><span class="blind">인스타그램</span></a>
+		        </div>
+		        <div>
+			        <a href="#" class="btn-sns facebook-40 on"><span class="blind">페이스북</span></a>
+			        <a href="#" class="btn-sns google-40 on"><span class="blind">구글</span></a>
+			        <a href="#" class="btn-sns naver-40 on"><span class="blind">네이버</span></a>
+			        <a href="#" class="btn-sns kakao-40 on"><span class="blind">카카오</span></a>
+			        <a href="#" class="btn-sns instagram-40 on"><span class="blind">인스타그램</span></a>
+		        </div>
+	        </section>
+
+          <section>
+            <h2>calendar (datepicker)</h2>
+	          
+            <div class="js-calendar datepicker">
+              <input type="text" id="datepicker" readonly>
+            </div>
+          </section>
+
+          <section>
+            <h2>postcode - Daum 우편번호 서비스</h2>
+
+            <div class="form-cell js-postcode">
+              <em class="kurly-text-09">픽업지 주소</em>
+              <div class="input-group address">
+                <div class="inbox">
+                  <div class="input-area js-input">
+                    <div class="input result">
+                      <input type="text" readonly>
+                    </div>
+                  </div>
+                  <button type="button" class="btn-search"><span class="blind">주소 검색</span></button>
+                </div>
+                <div class="inbox">
+                  <div class="input-area js-input">
+                    <div class="input detail">
+                      <input type="text" title="상세 주소 입력" placeholder="상세주소를 입력해주세요.">
+                      <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>accordion</h2>
+            <dl class="accordion js-accordion">
+              <dt class="accordion-head"><button type="button" aria-controls="acco-content1" aria-expanded="false">accordion1</button></dt>
+              <dd id="acco-content1" class="accordion-content">contents1</dd>
+              <dt class="accordion-head"><button type="button" aria-controls="acco-content2" aria-expanded="false">accordion2</button></dt>
+              <dd id="acco-content2" class="accordion-content">contents2</dd>
+              <dt class="accordion-head"><button type="button" aria-controls="acco-content3" aria-expanded="false">accordion3</button></dt>
+              <dd id="acco-content3" class="accordion-content">contents3</dd>
+            </dl>
+          </section>
+
+          <section>
+            <h2>dropdown</h2>
+            <div class="dropdown js-dropdown" data-placeholder="선택하세요.">
+              <button type="button" id="dropdown" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">기본형</button>
+              <div class="dropdown-box">
+                <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+                  <li role="option" aria-selected="false"><button type="button" data-value="">옵션 1</button></li>
+                  <li role="option" aria-selected="false"><button type="button" data-value="">옵션 2</button></li>
+                  <li role="option" aria-selected="false"><button type="button" data-value="">옵션 3</button></li>
+                  <li role="option" aria-selected="false"><button type="button" data-value="">옵션 4</button></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+                      <li role="option" aria-selected="false"><button type="button" data-value="">1월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">2월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">3월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">4월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">5월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+                      <li role="option" aria-selected="false"><button type="button" data-value="">1월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">2월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">3월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">4월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">5월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+                      <li role="option" aria-selected="false"><button type="button" data-value="">1월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">2월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">3월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">4월</button></li>
+                      <li role="option" aria-selected="false"><button type="button" data-value="">5월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-tertiary dropdown-apply">apply</button>
+            <button class="btn btn-tertiary dropdown-clear">clear</button>
+          </section>
+
+          <section>
+            <h2>tab</h2>
+            <div class="tab js-tab">
+              <div class="tab-list" role="tablist">
+                <button type="button" id="tab1" role="tab" aria-controls="tab-content1" aria-selected="false">tab1</button>
+                <button type="button" id="tab2" role="tab" aria-controls="tab-content2" aria-selected="false">tab2</button>
+                <button type="button" id="tab3" role="tab" aria-controls="tab-content3" aria-selected="false">tab3</button>
+              </div>
+              <div class="tab-content">
+                <div id="tab-content1" class="content" role="tabpanel" aria-labelledby="tab1" tabindex="0" hidden>
+                  tab1 contents
+                </div>
+                <div id="tab-content2" class="content" role="tabpanel" aria-labelledby="tab2" tabindex="0" hidden>
+                  tab2 contents
+                </div>
+                <div id="tab-content3" class="content" role="tabpanel" aria-labelledby="tab3" tabindex="0" hidden>
+                  tab3 contents
+                </div>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-tertiary tab-apply">apply</button>
+            <button class="btn btn-tertiary tab-clear">clear</button>
+          </section>
+
+          <section>
+            <h2>paging</h2>
+            <div class="paging js-paging">
+              <button type="button" class="paging-first" disabled><span class="blind">처음</span></button>
+              <button type="button" class="paging-prev" disabled><span class="blind">이전</span></button>
+              <div class="paging-list">
+                <a href="#" aria-current="page">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+              </div>
+              <button type="button" class="paging-next"><span class="blind">다음</span></button>
+              <button type="button" class="paging-last"><span class="blind">마지막</span></button>
+            </div>
+            <br>
+            <button class="btn btn-tertiary paging-apply">apply</button>
+            <button class="btn btn-tertiary paging-clear">clear</button>
+          </section>
+
+          <section>
+            <h2>swiper</h2>
+
+            <div class="swiper-container" style="height: 100px;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <p><a href="https://swiperjs.com/" target="_blank">https://swiperjs.com/</a></p>
+          </section>
+
+          <section>
+            <h2>textarea</h2>
+            <div class="js-textarea">
+              <textarea id="txt-field0" name="txt-field" maxlength="1000" cols="30" rows="10" placeholder="입력해 주세요."></textarea>
+            </div>
+            <div class="textarea-type js-textarea">
+              <textarea id="txt-field1" name="txt-field" cols="30" rows="10" placeholder="입력해 주세요."></textarea>
+            </div>
+            <div class="js-textarea">
+              <textarea id="txt-field2" name="txt-field" maxlength="1000" cols="30" rows="10" placeholder="입력해 주세요."></textarea>
+              <span class="current-length">0</span>/<span class="total-length">100</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Increase Number</h2>
+            <div>
+              <input class="increase-number" type="text" disabled>
+            </div>
+            <br>
+            <button class="btn btn-tertiary increase-start">start</button>
+          </section>
+
+          <section>
+            <h2>modal</h2>
+            <div>
+              <button style="padding: 12px" type="button" class="modalBtn btn alert" aria-haspopup="dialog" aria-controls="pop-alert">alert</button>
+              <button style="padding: 12px" type="button" class="modalBtn btn confirm" aria-haspopup="dialog" aria-controls="pop-confirm">confirm</button>
+              <button style="padding: 12px" type="button" class="modalBtn btn modal" aria-haspopup="dialog" aria-controls="pop-modal">modal</button>
+              <button style="padding: 12px" type="button" class="modalBtn btn full" aria-haspopup="dialog" aria-controls="pop-full">full</button>
+            </div>
+
+            <div id="pop-alert" class="layer" role="dialog" aria-modal="true">
+              <div class="layer-wrap">
+                <div class="title">alert title</div>
+                <button class="close">close</button>
+                <div class="layer-content">
+                  alert contents
+                </div>
+                <div class="button-wrap">
+                  <button class="btn">ok</button>
+                </div>
+              </div>
+            </div>
+            <div id="pop-confirm" class="layer" role="dialog" aria-modal="true">
+              <div class="layer-wrap">
+                <div class="title">confirm title</div>
+                <button class="close">close</button>
+                <div class="layer-content">
+                  confirm contents
+                </div>
+                <div class="button-wrap">
+                  <button class="btn">cancel</button>
+                  <button class="btn">confirm</button>
+                </div>
+              </div>
+            </div>
+            <div id="pop-modal" class="layer" role="dialog" aria-modal="true">
+              <div class="layer-wrap">
+                <div class="title">modal title</div>
+                <button class="close">close</button>
+                <div class="layer-content">
+                  modal contents
+                  <input type="checkbox">
+                  <button class="modalBtn">alert</button>
+                </div>
+              </div>
+            </div>
+            <div id="pop-full" class="layer" role="dialog" aria-modal="true">
+              <div class="layer-wrap full">
+                <div class="title">full modal title</div>
+                <button class="close">close</button>
+                <div class="layer-content">
+                  full contents
+                  <button class="modalBtn">alert</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>block body scroll</h2>
+            <button class="btn btn-tertiary block">block</button>
+            <button class="btn btn-tertiary block scroll">scroll</button>
+          </section>
+
+          <section>
+            <h2>prevent scroll event</h2>
+            <button class="btn btn-tertiary prevent">prevent</button>
+            <button class="btn btn-tertiary prevent scroll">scroll</button>
+          </section>
+
+          <section>
+            <h2>loading</h2>
+            <button class="btn loadingBtn">loading start</button>
+          </section>
+	
+	        <section>
+		        <h2>lottie</h2>
+		        <div id="lottie" style="width: 100%; height: 500px"></div>
+		        <button class="btn btn-tertiary lottie-start">start</button>
+		        <button class="btn btn-tertiary lottie-pause">pause</button>
+		        <button class="btn btn-tertiary lottie-stop">stop</button>
+	        </section>
+        </div>
+      </div>
+    </div>
+      <!--: End #contents -->
+
+      @@include('./pc/html/inc/footer.html')
+    </div>
+
+    <!-- common, plugins, app -->
+    <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+    <script type="text/javascript" src="/common/plugins.js"></script>
+
+    <script>
+	    /** guide ******************************************************************************************************** */
+	    ;($ => {
+				$(document).ready(function () {
+					let guide = window.KurlyNextmile.Guide()
+					for (let plugin in guide) {
+						guide[plugin]()
+					}
+				})
+
+		    window.KurlyNextmile.Guide = function () {
+			    return {
+				    calendar () {
+							let $calendar = $('.js-calendar')
+					
+					    // init, event
+					    $calendar.calendar('clear').calendar({
+						    // datepicker options
+					    }).on('change', e => {
+								console.log(e.date)
+					    })
+					    // set
+					    $calendar.calendar('set', new Date())
+					
+					    // get
+					    console.log('calendar get: ', $calendar.calendar('get'))
+					    
+				    },
+				    dropdown () {
+					    let $dropdown = $('.js-dropdown')
+					    // init, event
+					    $dropdown.dropdown('clear').dropdown({
+						    // placeholder: '선택하세요.',
+						    // activeIndex: 1, // default: -1
+						    // disableIndex: [2, 3],
+					    }).on('change', e => {
+						    console.log('dropdown, type: ' + e.type + ', activeIndex: ' + e.activeIndex + ', value: ' + e.value)
+					    })
+					    // method - active
+					    // $dropdown.dropdown('active', 2)
+
+					    // apply
+					    $('.dropdown-apply').on('click', e => {
+						    $('.js-dropdown').dropdown()
+					    })
+
+					    // clear
+					    $('.dropdown-clear').on('click', e => {
+						    $('.js-dropdown').dropdown('clear')
+					    })
+			      },
+				    tab () {
+					    let $tab = $('.js-tab')
+					    // init, event
+					    $tab.tab('clear').tab({
+						    // activeIndex: 1 // default: 0
+					    }).on('change', e => {
+						    console.log('tab, type: ' + e.type + ', activeIndex: ' + e.activeIndex)
+					    })
+					    // method - active
+					    $tab.tab('active', 2)
+
+					    // apply
+					    $('.tab-apply').on('click', e => {
+						    $('.js-tab').tab()
+					    })
+
+					    // clear
+					    $('.tab-clear').on('click', e => {
+						    $('.js-tab').tab('clear')
+					    })
+			      },
+				    accordion () {
+					    let $accordion = $('.js-accordion')
+					    // init, event
+					    $accordion.accordion('clear').accordion({
+						    // type: 'multi', // type: single(default), multi
+						    activeIndex: 0 // default: -1
+					    }).on('open', e => {
+						    console.log('accordion, type: ' + e.type + ', activeIndex: ' + e.activeIndex)
+					    })
+					    // method - active
+					    // $accordion.accordion('active', 2)
+		        },
+				    paging () {
+					    let $paging = $('.paging.js-paging')
+					    // event: change
+					    $paging.on('change', e => {
+						    console.log('paging, type: ' + e.type + ', offset: ' + e.offset + ', total: ' + e.total)
+					    })
+					    // init
+					    $paging.paging({
+						    offset: 4, // 현재 페이지 (default: 0)
+						    limit: 10, // 화면에 보여지는 리스트 갯수 (default: 10)
+						    total: 232 // 전체 리스트 갯수
+						    // pagingLength: 10 // 화면에 보여지는 paging 갯수 (default: 10) | mobile (default: 5)
+					    })
+					    // method - set
+					    $paging.paging('set', 4) // offset
+
+					    // apply
+					    $('.paging-apply').on('click', e => {
+						    $('.js-paging').paging({
+							    offset: 5, // 현재 페이지 (default: 0)
+							    limit: 10, // 화면에 보여지는 리스트 갯수
+							    total: 120 // 전체 리스트 갯수
+						    })
+					    })
+
+					    // clear
+					    $('.paging-clear').on('click', e => {
+						    $('.js-paging').paging('clear')
+					    })
+			      },
+				    increaseNumber () {
+					    $('.increase-start').on('click', e => {
+						    $.increaseNumber($('.increase-number'), {start: 0, end: 9999999}).on('complete', () => console.log('complete'))
+					    })
+			      },
+				    modal () {
+					    $('.modalBtn').on('click', event => {
+						    /**
+						     * closedFocus: 접근성 준수
+						     * preventScroll: 스크롤 처리 방식 (default: blockBodyScroll)
+						     ** */
+
+						    if (event.target.className.indexOf(' alert') > -1) {
+							    $('#pop-alert').modal({classes: 'add class test', closedFocus: '.modalBtn.alert'}, e => {
+								    console.log(e)
+							    })
+
+						    } else if (event.target.className.indexOf(' confirm') > -1) {
+							    $('#pop-confirm').modal({classes: 'add class test', closedFocus: '.modalBtn.confirm', preventScroll: true}, e => {
+								    console.log(e)
+							    })
+
+						    } else if (event.target.className.indexOf(' modal') > -1) {
+							    $('#pop-modal').modal({clickToClose: false, closedFocus: '.modalBtn.modal'}, e => {
+								    console.log(e)
+								    if (e.type === 'open') {
+									    e.$modal.find('.modalBtn').on('click', e => {
+										    // $('#pop-modal').modal('close')
+										    // $('#pop-alert').modal({closedFocus: '.modalBtn.modal'})
+										    $('#pop-alert').modal({classes: 'multi', dimmed: false, closedFocus: '#pop-modal .modalBtn'})
+									    })
+								    }
+							    })
+
+						    } else if (event.target.className.indexOf(' full') > -1) {
+							    $('#pop-full').modal({clickToClose: false, closedFocus: '.modalBtn.full'}, e => {
+								    console.log(e)
+								    if (e.type === 'open') {
+									    e.$modal.find('.modalBtn').on('click', e => {
+										    console.log(e)
+										    $('#pop-alert').modal({classes: 'multi', closedFocus: '#pop-full .modalBtn'}) // multi: dimmed 삭제 class
+									    })
+								    }
+							    })
+						    }
+					    })
+			      },
+				    loading () {
+					    $('.loadingBtn').on('click', e => {
+						    console.log('loading: start')
+						    $.loading('start')
+
+						    setTimeout(() => {
+							    console.log('loading: end')
+							    $.loading('stop')
+						    }, 1000)
+					    })
+			      },
+				    blockBodyScroll () {
+					    $('.btn.block:not(.scroll)').on('click', e => {
+						    $.blockBodyScroll(true)
+					    })
+					    $('.btn.block.scroll').on('click', e => {
+						    $.blockBodyScroll(false)
+					    })
+			      },
+				    preventScrollEvent () {
+					    $('.btn.prevent:not(.scroll)').on('click', e => {
+						    $.preventScroll(true)
+					    })
+					    $('.btn.prevent.scroll').on('click', e => {
+						    $.preventScroll(false)
+					    })
+			      },
+				    swiper () {
+					    let swiper = new Swiper('.swiper-container', {
+						    navigation: {
+							    nextEl: '.swiper-button-next',
+							    prevEl: '.swiper-button-prev'
+						    },
+						    pagination: {
+							    el: '.swiper-pagination',
+							    clickable: true
+						    },
+						    speed: 300,
+						    loop: true,
+						    on: {
+							    init () {
+								    console.log('swiper-init', this.realIndex)
+							    },
+							    transitionEnd () {
+								    console.log('swiper-end', this.realIndex)
+							    },
+							    slideChange () {
+								    console.log('swiper-change', this.realIndex)
+							    },
+							    resize () {
+								    console.log('swiper-resize')
+							    }
+						    }
+					    })
+			      },
+				    lottie () {
+					    let _lottie = lottie.loadAnimation({
+						    container: document.getElementById('lottie'),
+						    renderer: 'svg',
+						    path: '/data/lottie.json',
+						    // animationData: '', // async
+						    // loop: false, // default: true
+						    // autoplay: true // default: true
+					    })
+					
+					    $('.lottie-start').on('click', e => {
+						    _lottie.play()
+					    })
+					    $('.lottie-pause').on('click', e => {
+						    _lottie.pause()
+					    })
+					    $('.lottie-stop').on('click', e => {
+						    _lottie.stop()
+					    })
+				    },
+				    postcode () {
+					    $('.js-postcode').on('complete-close force-close', e => {
+						    if (e.type === 'complete-close') {
+							    console.log(e.result)
+						    }
+					    })
+				    }
+			    }
+		    }
+	    })(window.jQuery)
+      /** ***************************************************************************************************************** */
+    </script>
+  </body>
+</html>

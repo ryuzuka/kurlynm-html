@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+
+
+// clear floating
+@mixin clearfix {
+  &:after{
+    display:block;
+    clear:both;
+    content:'';
+  }
+}
+
+// border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// box-sizing
+@mixin box-sizing($type:border-box) {
+  -webkit-box-sizing:$type;
+  box-sizing:$type;
+}
+
+// vertical middle
+@mixin v-middle {
+  overflow: hidden;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+// transform
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+@mixin transformOrigin($transforms) {
+  transform-origin: $transforms;
+}
+@mixin rotate($rotates) {
+  -webkit-transform: rotate(#{$rotates + deg});
+  transform: rotate(#{$rotates + deg});
+}
+@mixin scale($scales) {
+  -webkit-transform: scale($scales);
+  transform: scale($scales);
+}
+
+// image
+@mixin commonImg ($x:0, $y:0) {
+  display:inline-block;
+  background: {
+    image:url('/pc/image/common.png');
+    size:(500px * 1) auto;
+    repeat:no-repeat;
+    position:($x * 1) ($y * 1);
+  }
+  vertical-align:middle;
+}
+
+@mixin snsImg ($x:0, $y:0) {
+  display:inline-block;
+  background: {
+    image:url('/pc/image/sns.png');
+    size:(500px * 1) auto;
+    repeat:no-repeat;
+    position:($x * 1) ($y * 1);
+  }
+  vertical-align:middle;
+}
+
+//ellipse
+@mixin ellipse($line) {
+  @if ($line > 1) {
+    display:-webkit-box;
+    white-space:normal;
+    word-wrap:break-word;
+    -webkit-line-clamp:$line;
+    -webkit-box-orient:vertical;
+  } @else {
+    display:block;
+    white-space:nowrap;
+  }
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+// flex setting
+@mixin flexbox {
+  display:flex;
+}
+@mixin set-middle {
+  @include flexbox;
+  align-items: center;
+}
+
+// button
+@mixin btn($color, $type:solid, $hover:'', $hoverColor:'') {
+  @if $type == line {
+    border-color:$color;
+    color:$color;
+    @if $hover == '' {
+      &:hover {
+        background-color:#fff;
+      }
+    } @else {
+      &:hover {
+        border-color:$hoverColor;
+        background-color:$hover;
+        color:$hoverColor;
+      }
+    }
+  } @else {
+    border-color:$color;
+    background-color:$color;
+    color:#fff;
+    &:hover {
+      border-color:$hoverColor;
+      background-color:$hover;
+    }
+  }
+}
+
+// box shadow
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "견적문의"
+  })
+</head>
+
+<body>
+  <div class="wrap info">
+    @@include('../inc/header.html')
+
+
+    <!--: Start #contents -->
+    <div class="contents information information-detail">
+
+        <div class="step6">
+            <div class="step">
+                <span class="atv ok"></span>
+                <span class="atv ok"></span>
+                <span class="atv"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>평균물량을 입력해주세요
+              <span>*최근 3개월 이내의 평균물량 (픽업일 기준)</span>
+            </h2>
+	
+	        <div class="line"></div>
+
+        <div class="form_step4">
+        <h4>새벽배송 평균 물량
+          <span>*새벽배송 물량이 없을경우 수도권 지역의 일 평균 출고건 기입</span>
+        </h4>
+        <div class="daybox">
+          <div class="form-head">
+            <label>요일별</label>
+        </div>
+          <div class="week-group">
+            <div class="inbox">
+              <div class="input-area js-input number">
+                <label for="weekMon" class="day">월</label>
+                <div class="input">
+                  <input type="text" id="weekMon" title="월요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+            <div class="inbox">
+              <div class="input-area js-input number w35">
+                <label for="weekTue" class="day">화</label>
+                <div class="input">
+                  <input type="text" id="weekTue" title="화요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+            <div class="inbox">
+              <div class="input-area js-input number">
+                <label for="weekWed" class="day">수</label>
+                <div class="input">
+                  <input type="text" id="weekWed" title="수요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+            <div class="inbox">
+              <div class="input-area js-input number w35">
+                <label for="weekThu" class="day">목</label>
+                <div class="input">
+                  <input type="text" id="weekThu" title="목요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+            <div class="inbox">
+              <div class="input-area js-input number">
+                <label for="weekFri" class="day">금</label>
+                <div class="input">
+                  <input type="text" id="weekFri" title="금요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+            <div class="inbox">
+              <div class="input-area js-input number w35">
+                <label for="weekSat" class="day">토/일</label>
+                <div class="input">
+                  <input type="text" id="weekSat" title="토요일,일요일 평균 물량 건수 입력">
+                </div>
+                건
+              </div>
+            </div>
+          </div>
+          <div class="vertical-box">
+            <div class="form-head">
+              <label>월별</label>
+          </div>
+            <div class="month-group" data-type="early">
+	            <input type="hidden" id="early_month1" name="early_month1">
+	            <input type="hidden" id="early_month2" name="early_month2">
+	            <input type="hidden" id="early_month3" name="early_month3">
+              <div class="input-group">
+                <div class="inbox">
+                  <div class="dropdown js-dropdown" data-placeholder="월">
+                    <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                    <div class="dropdown-box">
+                      <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                      <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="inbox">
+                  <div class="input-area js-input number">
+                    <div class="input">
+                      <input type="text" title="월별 배송 건수 입력">
+                    </div>
+                    건
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="inbox">
+                  <div class="dropdown js-dropdown" data-placeholder="월">
+                    <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                    <div class="dropdown-box">
+                      <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                      <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="inbox">
+                  <div class="input-area js-input number">
+                    <div class="input">
+                      <input type="text" title="월별 배송 건수 입력">
+                    </div>
+                    건
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="inbox">
+                  <div class="dropdown js-dropdown" data-placeholder="월">
+                    <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                    <div class="dropdown-box">
+                      <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                      <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                      <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="inbox">
+                  <div class="input-area js-input number">
+                    <div class="input">
+                      <input type="text" title="월별 배송 건수 입력">
+                    </div>
+                    건
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+
+      <div class="form_step4">
+        <h4>택배배송 평균 물량</h4>
+
+        <div class="vertical-box">
+          <div class="form-head">
+            <label>월별</label>
+        </div>
+          <div class="month-group" data-type="delivery">
+	          <input type="hidden" id="delivery_month1" name="delivery_month1">
+	          <input type="hidden" id="delivery_month2" name="delivery_month2">
+	          <input type="hidden" id="delivery_month3" name="delivery_month3">
+            <div class="input-group">
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                    <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox">
+                <div class="input-area js-input number">
+                  <div class="input">
+                    <input type="text" title="월별 배송 건수 입력">
+                  </div>
+                  건
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                    <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox">
+                <div class="input-area js-input number">
+                  <div class="input">
+                    <input type="text" title="월별 배송 건수 입력">
+                  </div>
+                  건
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="inbox">
+                <div class="dropdown js-dropdown" data-placeholder="월">
+                  <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">월</button>
+                  <div class="dropdown-box">
+                    <ul class="dropdown-list" role="listbox" aria-labelledby="dropdown" tabindex="-1">
+	                    <li role="option" aria-selected="false"><button type="button" data-value="1">1월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="2">2월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="3">3월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="4">4월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="5">5월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="6">6월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="7">7월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="8">8월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="9">9월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="10">10월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="11">11월</button></li>
+	                    <li role="option" aria-selected="false"><button type="button" data-value="12">12월</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox">
+                <div class="input-area js-input number">
+                  <div class="input">
+                    <input type="text" title="월별 배송 건수 입력">
+                  </div>
+                  건
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+
+
+
+        </div>
+
+        <div class="form_btn">
+          <button class="btn btn-primary btn-w100">다음</button>
+          <button class="btn btn-secondary btn-w100">이전</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 1
+		
+		  $(function () {
+			
+		  })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

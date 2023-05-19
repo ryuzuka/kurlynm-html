@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "회원정보수정"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header.html')
+    <!-- e : header -->
+
+
+    <div class="visual mypage">
+        <div class="text">
+            <h2>회원정보수정</h2>
+        <p class="text">고객님의 회원정보를 관리해보세요.</p>
+        </div>
+    </div>
+
+    <!-- s : contents -->
+
+
+      <div class="mypage_adit">
+        <h2>기본정보</h2>
+        <div class="box">
+            <ul>
+                <li>
+                    <p class="title">이메일<span>*</span></p>
+                    <input type="text" placeholder="test@test.com" class="info">
+                </li>
+                <li>
+                    <p class="title">이름<span>*</span></p>
+                    <input type="text" placeholder="홍길동" class="info">
+                </li>
+                <li>
+                    <p class="title">연락처<span>*</span></p>
+                    <input type="text" placeholder="010-0000-0000" class="info">
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="btn-wrap">
+          <a href="#" class="btn btn-primary modify" aria-controls="pop-modify-complete">회원정보 수정</a>
+        </div>
+
+        <div class="member_delete">
+          <a href="#none" class="withdrawal" aria-controls="pop-withdrawal">회원탈퇴</a>
+        </div>
+
+        <div id="pop-modify-complete" class="layer" role="dialog" aria-modal="true">
+            <div class="layer-wrap">
+              <div class="layer-content">
+                <p>회원정보 수정이 완료되었습니다.</p>
+              </div>
+              <div class="button-wrap">
+                <button class="btn">확인</button>
+              </div>
+            </div>
+        </div>
+
+        <div id="pop-withdrawal" class="layer" role="dialog" aria-modal="true">
+            <div class="layer-wrap">
+              <div class="layer-content">
+                    <button class="close">
+                    </button>
+                <div class="title">
+                    회원탈퇴
+                </div>
+                <div class="text">
+                    <p>탈퇴 사유를 알려주세요</p>
+                    <textarea></textarea>
+                </div>
+                <div class="seeyou">
+                    <h3>그동안 이용해주셔서 감사합니다.</h3>
+                    <p>고객님의 의견을 반영하여 더 나은 서비스를 제공하는 <br>
+                        컬리넥스트마일이 되겠습니다.</p>
+                </div>
+              </div>
+              <div class="button-wrap">
+                <button class="btn">회원탈퇴</button>
+              </div>
+            </div>
+        </div>
+	
+	      <div id="pop-alert" class="layer" role="dialog" aria-modal="true">
+		      <div class="layer-wrap">
+			      <div class="layer-content"></div>
+			      <div class="button-wrap">
+				      <button class="btn"></button>
+			      </div>
+		      </div>
+	      </div>
+
+
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = -1
+		  $.depth2Index = -1
+		
+		  $(function () {
+			  /** 회원 수정 */
+			  $('.mypage_adit').on('click', '.modify', e => {
+				  e.preventDefault()
+				  
+				  $('#pop-alert').modal({
+					  text: '회원정보 수정이 완료되었습니다.',
+					  buttonText: '확인',
+					  closeFocus: '.mypage_adit .modify'
+				  }, e => {
+						if (e.type === 'before-close') {
+							// modal before-close
+						} else if (e.type === 'close') {
+							// modal close
+						}
+				  })
+			  })
+			
+			  /** 회원 탈퇴 */
+			  $('.mypage_adit').on('click', '.withdrawal', e => {
+				  e.preventDefault()
+				  $('#pop-withdrawal').modal({closedFocus: '.mypage_adit .withdrawal'}, e => {
+					  if (e.type === 'close') {
+						  console.log(e)
+					  }
+				  })
+			  })
+		  })
+	  })(window.jQuery)
+</script>
+</body>
+</html>

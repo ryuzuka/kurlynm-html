@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "견적문의"
+  })
+</head>
+
+<body>
+  <div class="wrap info">
+    @@include('../inc/header.html')
+
+    <!--: Start #contents -->
+    <div class="contents information information-detail">
+
+        <div class="step6">
+            <div class="step">
+                <span class="atv"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>기업정보를 입력해주세요.</h2>
+            <div class="input-area js-input">
+                <label for="inp-txt0">사업체명</label>
+                <div class="input">
+                  <input type="text" id="inp-txt0" placeholder="사업자등록증에 기입된 사업체명">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt1">대표자</label>
+                <div class="input">
+                  <input type="text" id="inp-txt1" placeholder="대표자명 입력">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt2">사업자등록번호</label>
+                <div class="input">
+                  <input type="number" id="inp-txt2" placeholder="‘-’를 제외한 숫자만 입력">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt3">본사주소</label>
+                <div class="input">
+                  <input type="text" id="inp-txt3" placeholder="본사주소 입력">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt4">판매 사이트</label>
+                <div class="input">
+                  <input type="text" id="inp-txt4" placeholder="URL 입력   Ex)https://kurlynextmile.com">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt5">대표 이메일</label>
+                <div class="input">
+                  <input type="email" id="inp-txt5" placeholder="본사의 대표 이메일">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt6">브랜드명</label>
+                <div class="input">
+                  <input type="text" id="inp-txt6" placeholder="브랜드명">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+            <div class="input-area js-input">
+                <label for="inp-txt7">고객센터 연락처</label>
+                <div class="input">
+                  <input type="tel" id="inp-txt7" placeholder="‘-’을 제외한 숫자만 입력">
+                  <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form_btn">
+            <button class="btn btn-primary btn-w100">다음</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 1
+		
+		  $(function () {
+			
+		  })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

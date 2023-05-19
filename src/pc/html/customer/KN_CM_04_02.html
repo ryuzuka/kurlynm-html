@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "이벤트"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header.html')
+    <!-- e : header -->
+
+    <!-- s : contents -->
+    <div class="contents">
+      <div class="visual customer">
+        <h2>이벤트</h2>
+        <p class="text">다양한 혜택을 드리는 이벤트에 참여해보세요.</p>
+      </div>
+
+      <div class="customer_section inner">
+
+        <div class="event_detail">
+            <div class="title">
+                <h2>
+                    견적문의 받고 스타벅스 커피 받자!
+                </h2>
+                <div class="state_are">
+                    <span class="date">2022.10.19~2022.12.31</span>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>
+                    <img src="/pc/image/customer/event.png">
+                </p>
+            </div>
+
+
+
+
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-primary">목록</button>
+           </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/pc/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+      $.depth1Index = 4
+      $.depth2Index = 0
+
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

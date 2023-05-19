@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "송장조회"
+  })
+</head>
+
+<body>
+  <div class="wrap">
+    @@include('../inc/header.html')
+
+    <div class="visual information">
+        <div class="text">
+            <h2>송장조회</h2>
+            <p>고객님이 신청하신 물류의 배송현황을 직접 확인해보세요.</p>
+        </div>
+    </div>
+
+    <!--: Start #contents -->
+    <div class="inner-section if-transport">
+       
+          <h3>조회결과</h3>
+         
+        <div class="box active">
+          <div class="info-number">
+            <h4>운송장번호</h4>
+            <span>250-01-123412341234</span>
+        
+          </div>
+          <div class="info-list">
+            <ul>
+              <li>마켓컬리<i class="next"></i></li>
+              <li>컬리넥스트마일</li>
+              <li>배송출발</li>
+            </ul>
+          </div>
+
+
+          <div class="atv_box">
+            <div class="icon4">
+              <ul>
+                <li>
+                  <img src="/mo/image/information/de01.png" class="icon">
+                  <p>집화</p>
+                </li>
+                <li>
+                  <img src="/mo/image/information/de02.png" class="icon">
+                  <p>TC도착</p>
+                </li>
+                <li class="on">
+                  <img src="/mo/image/information/de03.png" class="icon">
+                  <p>배송출발</p>
+                </li>
+                <li>
+                  <img src="/mo/image/information/de04.png" class="icon">
+                  <p>배송완료</p>
+                </li>
+              </ul>
+            </div>
+            <div class="info_dev">
+              <h2></h2>
+              <ul>
+                <li>
+                  <p>2022-10-01 15:30</p>
+                  <h3>삼형제 고기 <b>집화</b></h3>
+                </li>
+                <li>
+                  <p>2022-10-01 15:30</p>
+                  <h3>배송기사 (FC홍길동) <b>TC도착</b></h3>
+                </li>
+                <li class="on">
+                  <p>2022-10-01 15:30</p>
+                  <h3>컬러넥스트마일 <b>배송출발</b></h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+       
+
+        
+
+
+      </div>
+
+      <div class="inquiry">
+        <p>편하신 경로로 문의주시면 신속하게 답변드리겠습니다.</p>
+        <h2>배송과정에 문제가 있으신가요?</h2>
+        <h1>1833-3165</h1>
+        <div class="btn_are">
+            <button class="btn btn-primary">1:1 문의하기</button>
+            <button class="btn btn-primary">카카오톡 문의</button>
+        </div>
+    </div>
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 2
+		
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

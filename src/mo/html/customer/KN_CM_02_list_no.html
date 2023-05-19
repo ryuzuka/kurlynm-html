@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "1:1 문의"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header.html')
+    <!-- e : header -->
+    <div class="visual customer">
+      <h2>1:1 문의</h2>
+      <p class="text">친절하고 신속하게 답변드리겠습니다.</p>
+    </div>
+    <!-- s : contents -->
+    <div class="contents">
+
+
+      <div class="customer_section inner">
+
+        <div class="tab js-tab">
+            <div class="tab-list" role="tablist">
+
+              <button type="button" id="tab2" role="tab" aria-controls="tab-content2" aria-selected="false">나의 문의내역</button>
+
+            </div>
+            <div class="tab-content">
+       
+
+
+              <div id="tab-content2" class="content" role="tabpanel" aria-labelledby="tab2" tabindex="0" hidden>
+                <div class="personal_inquiry">
+                
+                    <div class="nodata">
+                        <img src="/pc/image/mypage/nodata.png">
+                        <h2>작성된 문의내역이 없습니다.</h2>
+                        <p>*문의 시 가입한 이메일/비밀번호와 일치하지 않을 경우 조회되지 않습니다.</p>
+
+    
+                        <div class="btn-wrap">
+                            <a href="#" class="btn btn-primary">메인으로</a>
+                        </div>
+    
+                    </div>
+          
+         
+                </div>
+              </div>
+
+            </div>
+          </div>
+        
+      </div>
+  
+
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/pc/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 4
+		  $.depth2Index = 2
+		
+		  $(function () {
+	    })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

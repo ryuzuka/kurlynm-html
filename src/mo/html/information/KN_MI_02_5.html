@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "견적문의"
+  })
+</head>
+
+<body>
+  <div class="wrap info">
+    @@include('../inc/header.html')
+
+
+    <!--: Start #contents -->
+    <div class="contents information information-detail">
+
+        <div class="step6">
+            <div class="step">
+                <span class="atv ok"></span>
+                <span class="atv ok"></span>
+                <span class="atv ok"></span>
+                <span class="atv"></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>담당자 정보를 입력해주세요. </h2>
+
+            <div class="input-area js-input">
+              <div class="input">
+                <label>성함<span>*</span></label>
+                <input type="text" id="inp-txt0" placeholder="업무 진행 담당자의 성함">
+                <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+              </div>
+          </div>
+
+          <div class="input-area js-input">
+            <div class="input">
+              <label>연락처<span>*</span></label>
+              <input type="tel" id="inp-txt0" placeholder="‘-’를 제외한 숫자만 입력">
+              <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+            </div>
+        </div>
+
+        <div class="input-area js-input">
+          <div class="input">
+            <label>메일 주소<span>*</span></label>
+            <input type="email" id="inp-txt0" placeholder="업무 진행 담당자의 이메일">
+            <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+          </div>
+       </div>
+
+       <div class="form-box">
+       <div class="pre_are">
+        <label for="pickupEtc" class="kurly-text-09">개인정보 수집·이용 동의</label>
+          <div class="pre_are_box">
+	
+	          <p><span style="font-size:14px">주식회사 컬리넥스트마일(이하 &#39;회사&#39;)은(는) 『개인정보보호법』 제30조에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보처리방침을 수립하여 공개하고 있습니다.</span></p><br>
+	          <p><span style="font-size:14px"><b style="font-weight: bold">1. 수집 및 이용 목적</b><br />
+&nbsp;- 견적문의 신청 접수 및 응대</span></p>
+	          <p><br />
+		          <span style="font-size:14px"><b style="font-weight: bold">2. 개인정보 항목</b><br />
+&nbsp;&nbsp;<strong>기업정보</strong><br />
+&nbsp; &nbsp; - 사업체명<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 대표자명<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 사업자등록번호<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 주소<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 이메일 주소<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 연락처<br />
+<br />
+&nbsp;&nbsp;<strong>담당자</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 성함<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 연락처<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- 이메일주소</span></p>
+	          <p><br />
+		          <span style="font-size:14px"><b style="font-weight: bold">3. 보유기간</b><br />
+<strong style="font-weight: bold">&nbsp;: 견적문의 응대 완료 후 30일 보관 후 즉시 파기</strong><br />
+&nbsp;: 위 사항에 대하여 거부하실 수 있으나, 동의 거부 시 예상 견적 신청 접수가 제한됩니다.더 자세한 내용에 대해서는&nbsp;<a href="https://www.kurlynextmile.com/main/privacy" target="_blank" style="font-weight: bold; text-decoration-line: underline; color: #5e0080">[개인(위치)정보 처리방침]</a>을 참고하시기 바랍니다.</span></p>
+	         
+          </div>
+
+<div class="pre_agree">
+  <span>
+    개인정보 수집 및 이용에 대해 동의를 거부하실 수 있으나<br>
+거부하시는 경우 견적 문의가 불가합니다.
+  </span>
+  <div class="pre_agree_are">
+    <div class="input_are">
+    <input type="checkbox" id="pre_agree" name="pre_agree"><label for="pre_agree"></label>
+    </div>
+    <p>동의합니다.</p>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="form_btn">
+            <button class="btn btn-primary btn-w100">다음</button>
+            <button class="btn btn-secondary btn-w100">이전</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 1
+		
+		  $(function () {
+			
+		  })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

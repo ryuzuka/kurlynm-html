@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "공지사항"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header.html')
+    <!-- e : header -->
+
+    <!-- s : contents -->
+    <div class="contents">
+      <div class="visual customer">
+        <h2>공지사항</h2>
+        <p class="text">이슈 및 공지사항을 확인해보세요.</p>
+      </div>
+
+      <div class="customer_section inner">
+
+        <div class="notice_detail">
+            <div class="title">
+                <h2>
+                    컬리넥스트마일 임시 휴무 기간 안내
+                </h2>
+                <div class="state_are">
+                    <span class="date">2022. 10. 23</span>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>
+                    안녕하세요, 컬리넥트스마일입니다.<br><br>
+
+                    컬리넥스트마일 본사 이전으로 인해 임시 휴무기간을 가지게 되었습니다.<br><br>
+
+                    <b>임시 휴무기간 : 2022.10.31~2022.11.05</b><br><br>
+
+                    해당 기간동안 물류 배송이 어려울 수 있사오니, 기간을 꼭 참고하시어 신청해주시기 바랍니다.<br><br>
+
+                    본사 이전 후 더 나은 컬리넥스트마일로 찾아뵙겠습니다.<br><br>
+
+                    감사합니다.<br><br><br><br><br><br><br><br>
+                </p>
+            </div>
+
+            <div class="file">
+                <p>첨부파일</p>
+                <a href="#">컬리넥스트마일 공지문.hwp</a>
+            </div>
+
+
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-primary">목록</button>
+           </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/pc/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+      $.depth1Index = 4
+      $.depth2Index = 3
+
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

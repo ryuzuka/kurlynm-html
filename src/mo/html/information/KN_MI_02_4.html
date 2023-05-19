@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "견적문의"
+  })
+</head>
+
+<body>
+  <div class="wrap info">
+    @@include('../inc/header.html')
+
+
+    <!--: Start #contents -->
+    <div class="contents information information-detail">
+
+        <div class="step6">
+            <div class="step">
+                <span class="atv ok"></span>
+                <span class="atv ok"></span>
+                <span class="atv ok"></span>
+                <span class="atv"></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>물품정보를 입력해주세요. </h2>
+
+            <div class="input-area js-input">
+
+              <div class="input">
+                <label>취급상품</label>
+                <input type="text" id="inp-txt0" placeholder="Ex) 반찬, 샐러드, 육류, 의류 등">
+                <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+              </div>
+          </div>
+
+          <div class="input-area js-input">
+
+            <div class="input mbtn10">
+              <label>규격(cm) / 무게 (kg)</label>
+              <input type="text" id="inp-txt0" placeholder="가로 x 세로 x  높이 (세변의 합)">
+              <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+            </div>
+            <div class="input">
+              <input type="text" id="inp-txt0" placeholder="무게">
+              <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+            </div>
+        </div>
+
+        <div class="form-cell">
+          <div class="form-head">
+            <label for="orderDate">유형</label>
+          </div>
+          <div class="input-group mbtn10 status">
+            <div class="chk-box">
+              <input type="checkbox" id="rdoWay1-1" name="rdoWay" value="rdoPickup"><label for="rdoWay1-1">냉장</label>
+            </div>
+            <div class="chk-box">
+              <input type="checkbox" id="rdoWay1-2" name="rdoWay" value="rdoSelf"><label for="rdoWay1-2">냉동</label>
+            </div>
+            <div class="chk-box">
+              <input type="checkbox" id="rdoWay1-3" name="rdoWay" value="rdoSelf"><label for="rdoWay1-3">상온</label>
+            </div>
+          </div>
+
+          <div class="input">
+            <input type="text" id="inp-txt0" placeholder="기타 : 유형을 입력해주세요.">
+            <button type="button" class="btn-clear"><span><span class="blind">입력 텍스트 삭제</span></span></button>
+          </div>
+
+        </div>
+
+
+
+
+
+        </div>
+
+        <div class="form_btn">
+            <button class="btn btn-primary btn-w100">다음</button>
+            <button class="btn btn-secondary btn-w100">이전</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--: End #contents -->
+    @@include('../inc/footer.html')
+  </div>
+
+  <!-- KurlyNextmile, plugins, common -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+	  ;($ => {
+		  $.depth1Index = 2
+		  $.depth2Index = 1
+		
+		  $(function () {
+			  /** 물품정보 - 유형 */
+			  $('.input-group.status').on('change-input', e => {
+				  console.log(e)
+			  })
+		  })
+	  })(window.jQuery)
+  </script>
+</body>
+</html>

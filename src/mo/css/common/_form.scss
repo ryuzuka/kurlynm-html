@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+//form
+fieldset {
+  margin:0;
+  padding:0;
+  border:0;
+}
+input{
+  &[type="checkbox"], &[type="radio"] {
+    position:relative;
+    width:20px;
+    height:20px;
+    border:1px solid #bcbcbc;
+    vertical-align:top;
+    & + label {
+      display:inline-block;
+      padding-left:8px;
+      color:#787878;
+      vertical-align:top;
+    }
+    &:checked {
+      border-color:$primary;
+      &+ label {color:#000;}
+    }
+    &[disabled] {
+      background-color:#f4f4f4;
+      & + label {color:#787878;}
+    }
+  }
+  &[type="checkbox"] {
+    &:checked {
+      background-color:$primary;
+      &:after {
+        content:'';
+        display:block;
+        position:absolute;
+        top:4px;
+        left:4px;
+        width:8px;
+        height:4px;
+        border:solid #fff;
+        border-width:0 0 2px 2px;
+        @include transform(rotate(-45deg));
+      }
+    }
+  }
+  &[type="radio"] {
+    &:checked{
+      border-color:$primary;
+      &:after{
+        content:'';
+        position:absolute;
+        top:4px;
+        left:4px;
+        width:10px;
+        height:10px;
+        border-radius:100%;
+        background-color:$primary;
+      }
+    }
+  }
+  &[type="text"],
+  &[type="tel"],
+  &[type="number"],
+  &[type="password"],
+  &[type="search"],
+  &[type="email"] {
+    width:100%;
+    height:36px;
+    padding:7px 0px;
+    border-bottom:1px solid #d3d3d3;
+    background-color:transparent;
+    font-family:inherit;
+    font-size: 16px;
+    font-weight: normal;
+    color: #5f0080;
+    &::placeholder {
+      color:#787878;
+      font-family:inherit;
+    }
+    &:focus {
+      border-bottom:1px solid #d3d3d3;
+      background:none; background-color:transparent;
+      border-radius: 0px;
+      outline: #5f0080;
+    }
+  }
+}
+textarea {
+  width:100%;
+  padding:16px;
+  font-family:inherit;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 120px;
+  resize:none;
+  &::placeholder {
+    color:#959595;
+    font-family:inherit;
+  }
+}
+select {
+  width:100%;
+  height:44px;
+  padding:10px 11px;
+  border:1px solid #d0d0d0;
+  border-radius: 0;
+  background-color:transparent;
+  font-family:inherit;
+  caret-color:$primary;
+  appearance:none;
+  select::-ms-expand {
+    display:none;
+  }
+}
+select,input,textarea {
+  &[disabled] {
+    border-color:#f0f0f0;
+    background:#f0f0f0;
+    color:#787878;
+    opacity:1;
+  }
+}
+button {
+  cursor:pointer;
+  &[disabled] {cursor:default;}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include('../inc/meta.html',{
+  "pagetitle": "로그인 완료"
+  })
+</head>
+
+<body>
+  <!-- s : wrap -->
+  <div class="wrap">
+    <!-- s : header -->
+    @@include('../inc/header_login.html')
+    <!-- e : header -->
+
+
+    <div class="visual mypage">
+        <div class="text">
+            <h2>로그인 완료</h2>
+        <p class="text">로그인 완료</p>
+        </div>
+    </div>
+
+    <!-- s : contents -->
+
+ 
+
+
+
+    </div>
+    <!-- e : contents -->
+
+    <!-- s : footer -->
+    @@include('../inc/footer.html')
+    <!-- e : footer -->
+  </div>
+  <!-- e : wrap -->
+
+  <!-- common, plugins -->
+  <script type="text/javascript" src="/common/KurlyNextmile.js"></script>
+  <script type="text/javascript" src="/common/plugins.js"></script>
+  <script type="text/javascript" src="/mo/js/common.js"></script>
+
+  <!-- components -->
+  <script>
+  ;($ => {
+    $.depth1Index = -1
+    $.depth2Index = -1
+
+    $(function () {
+			// 기간 설정
+		  $('.estimate-form').on('change-calendar', e => {
+				console.log(e.period, e.date)
+		  })
+	  })
+  })(window.jQuery)
+  </script>
+</body>
+</html>

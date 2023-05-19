@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, button, hr {
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  font-size:100%;
+  font-family: 'Pretendard', 'AppleSDGothicNeo', 'Helvetica', sans-serif;
+  font-weight:400;
+  letter-spacing:-.03em;
+  vertical-align:baseline;
+  @include box-sizing;
+  -webkit-text-size-adjust:none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+html, body {
+ 
+  overflow-x: hidden;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+ol, ul {
+  list-style:none;
+}
+blockquote, q {
+  quotes:none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:'';
+  content:none;
+}
+a{
+  color:inherit;
+  &, &:link, &:visited, &:hover, &:active{
+    text-decoration:none;
+  }
+}
+button {
+  border:none;
+  background-color:transparent;
+  color:inherit;
+  font:inherit;
+}
+ins {
+  background-color:transparent;
+  text-decoration:none;
+}
+mark {
+  background-color:#FF9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+del {text-decoration:line-through;}
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+hr {
+  display:block;
+  height:1px;
+  margin:1em 0;
+  padding:0;
+  border:0;
+  border-top:1px solid #ccc;
+}
+input {margin:0}
+input, select, textarea {
+  border-radius:0;
+  border:0;
+  vertical-align:middle;
+  appearance:none;
+  @include box-sizing;
+}
+img {
+  width:100%;
+  vertical-align:top;
+}
+address, em {
+  font-style:normal;
+}
+.blind {
+  overflow:hidden;
+  position:absolute;
+  width:1px;
+  height:1px;
+  font-size:1px;
+  line-height:0;
+  clip:rect(0,0,0,0);
+}
