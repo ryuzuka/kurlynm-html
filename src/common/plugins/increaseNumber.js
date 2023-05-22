@@ -13,12 +13,12 @@
 
       $({num: Number(options.start) }).animate({num: Number(options.end)}, {
         step () {
-          let num = numberWithCommas(Math.floor(this.num))
+          let num = numberWithCommas(this.num.toFixed(options.decimal))
           writeNumber($target, num)
         },
         duration: options.duration || 800,
         complete () {
-          let num = numberWithCommas(Math.floor(this.num))
+          let num = numberWithCommas(this.num.toFixed(options.decimal))
           writeNumber($target, num)
           $target.triggerHandler({type: 'complete'})
         },

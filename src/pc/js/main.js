@@ -17,20 +17,33 @@
           $(el).removeClass('small mid big')
           let num = $(el).data('count').toString()
           let size = ''
-          if (num.length === 1) {
-            size = 'xsmall'
-          } else if (num.length === 2) {
-            size = 'small'
-          } else if (num.length === 3) {
-            size = 'mid'
-          } else if (num.length > 3) {
-            size = 'big'
+
+          if (idx === 0) {
+            $(el).css({
+              'width': 107 + 'px',
+              'margin-left': '-22px'
+            })
+            $(el).siblings('.kurly-text-04').css({
+              'margin-left': '30px'
+            })
+          } else {
+            if (num.length === 1) {
+              size = 'xsmall'
+            } else if (num.length === 2) {
+              size = 'small'
+            } else if (num.length === 3) {
+              size = 'mid'
+            } else if (num.length > 3) {
+              size = 'big'
+            }
           }
+
           $(el).addClass(size)
           $.increaseNumber($(el), {
             start: 0,
-            end: parseInt($(el).data('count')),
-            duration: 2500 + 500 * idx
+            end: Number($(el).data('count')),
+            duration: 2500 + 500 * idx,
+            decimal: idx === 0 ? 1 : 0
           }).on('complete', () => {})
         })
       }
